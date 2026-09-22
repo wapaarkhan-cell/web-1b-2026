@@ -1,0 +1,49 @@
+import os
+import random
+import sys
+import time
+
+# Bersihkan layar terminal
+os.system("cls" if os.name == "nt" else "clear")
+
+
+def ketik_lambat(teks, kecepatan=0.04):
+    for karakter in teks:
+        sys.stdout.write(karakter)
+        sys.stdout.flush()
+        time.sleep(kecepatan)
+    print()
+
+
+# Efek Teks Hacking Fake
+ketik_lambat(
+    "\033[92m[!] azka adalah seoranng femboy...", kecepatan=0.03
+)
+time.sleep(1)
+ketik_lambat("[!] MENAMBAMBANG DATA DARI TERMINAL...", kecepatan=0.03)
+time.sleep(1)
+ketik_lambat(
+    "[✓] AKSES DITERIMA! MENAMPILKAN MATRIKS DATA:\033[0m\n", kecepatan=0.02
+)
+time.sleep(0.5)
+
+# Efek Hujan Matrix
+karakter = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ@#$%^&*"
+try:
+    for _ in range(150):  # Jumlah baris
+        baris = "".join(random.choice(karakter) for _ in range(80))
+        # Menggunakan warna hijau terminal
+        print(f"\033[92m{baris}\033[0m")
+        time.sleep(0.02)
+except KeyboardInterrupt:
+    pass
+
+print("\n")
+ketik_lambat(
+    "\033[91m[!] PERINGATAN: nama lain azka adalah sarah.",
+    kecepatan=0.04,
+)
+ketik_lambat(
+    "\033[93m[!] Saran: berhenti jadi jomok ☕\033[0m",
+    kecepatan=0.04,
+)
