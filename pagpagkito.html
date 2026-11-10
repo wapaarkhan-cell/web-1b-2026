@@ -15,6 +15,7 @@
             <h1>poliban digicraft studio</h1>
             <p>solsusi transformasi bisnis digital anda di banjarmasin</p>
             <nav>
+                <a href="index.html">Beranda</a>
                 <a href="biodata.html">Tentang folder</a> |
                 <a href="pagpagkito.html" class="active">katalog jasa & paket harga</a> |
                 <a href="kontak.html">kontak & pemesanan</a>
@@ -22,59 +23,90 @@
         </div>
     </header>
     <hr>
-    <section>
-        <h2>portofolio & karya unggulan kami</h2>
+    <main class="container">
+    <!-- seksi portofolio utama -->
+    <section class="section">
+        <h2 class="section-title">portofolio & karya unggulan kami</h2>
+        <p class="section-subtittle">Berapa Proyek digital yang telah kami selesaikan untuk klien umkm lokal</p>
 
-        <p>
-            <img src="image.png" alt="produk 1" width="200">
-            <br>
-            <em>Gambar 1: desain landing page responsif untuk umkm lokal, nama brand pagpag kito</em>
-        </p>
+        <div class="card-grid">
+            <!-- `kartu portofolio 1 -->
+            <article class="card">
+                <img src="image.png" alt="mockup desain landing pagd agensi" class="card-img">
+                <div>
+                    <h3 class="card-tittle">Landing page umkm lokal</h3>
+                    <p class="card-text">saksikan video pengalaman studio dan alur kerja profesional tim kreatif</p>
+                </div>
+            </article>
+
+            <!-- kartu portofolio 2 (video profil) -->
+             <article class="card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/UExds0bbfcw?si=t_ux7vf4w2ViiRPl"
+                    title="youtube video player" allowfullscreen></iframe>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-tittle">Video profil bisnis</h3>
+                    <p class="card-text">saksikan video pengenalan profil studio dan alur kerja profesional tim kreatif kami</p>
+                </div>
+             </article>
+        </div>
     </section>
+
+    <!-- seksi katalog paket layanan -->
     <hr>
     <section>
         <h2>paket layanan & harga jasa kreatif</h2>
         <P>pilih paket layanan terbaiksesuai kebutuhan bisnis digital anda:</P>
 
-        <table border="1" cellspading="8" cellspacing="0">
-            <thead>
-                <tr bgcolor="#008080">
-                    <th colspan="4">
-                        <font color="white">DAFTAR HARGA JASA AGENSI SUKI LIAR</font>
-                    </th>
-                </tr>
-                <tr bgcolor="#F4F7F6">
-                    <th>kategori layanan</th>
-                    <th>nama paket</th>
-                    <th>fasilitas utama</th>
-                    <th>estimasi biaya</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td rowspan="2"><b>Desain & web</b></td>
-                    <td>landing page silver</td>
-                    <td>1 halaman, kontak form, intergrasi chat</td>
-                    <td>1.500.000</td>
-                </tr>
-                <tr>
-                    <td>website bisnis gold</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td rowspan="2"><b>content creator</b></td>
-                    <td>sosmed bronze</td>
-                    <td>12 konten feed, copywriting dasar</td>
-                    <td>1.000.000</td>
-                </tr>
-                <tr>
-                    <td>pag pag premium</td>
-                    <td>30 content mukbang pagpag</td>
-                    <td>1.500.000</td>
-                </tr>
+        <div class="card-grid">
+            <!-- paket 1 -->
+             <article class="card pricing-card">
+                <div class="card-body">
+                    <span class="badge">Web development</span>
+                    <h3 class="card-tittle">landing page silver</h3>
+                    <p class="card-price">1.500.000</p>
+                    <ul class="card-featured">
+                        <li>1 halaman web responsif</li>
+                        <li>formulir kontak pemesananan</li>
+                        <li>intergrasi chat whatsapp</li>
+                    </ul>
+                    <a href="kontak.html" class="btn-primary">Pesan paket</a>
+                </div>
+             </article>
 
-        </table>
+             <!-- paket 2 -->
+              <article class="card pricing-card featured">
+                <div class="card-body">
+                    <span class="badge badge-featured">paling populer</span>
+                    <h3 class="card-tittle">website bisnis gold</h3>
+                    <p class="card-price">3.500.000</p>
+                    <ul class="card-featured">
+                        <li>5 halaman web lengkap</li>
+                        <li>optimisasi seo dasar</li>
+                        <li>galeri produk dinamis</li>
+                    </ul>
+                    <a href="kontak.html" class="btn-primary">pesan paket</a>
+                </div>
+              </article>
+
+              <!-- paket 3 -->
+               <article class="card pricing-card">
+                <div class="card-body">
+                    <span class="badge">content creator</span>
+                    <h3 class="card-tittle">sosmed premium</h3>
+                    <p class="card-price">2.500.000</p>
+                    <ul class="card-featured">
+                        <li>30 content feed</li>
+                        <li>riset hastag & copywriting</li>
+                        <li>admin kepala media sosial</li>
+                    </ul>
+                    <a href="kontak.html" class="btn-primary">pesan paket</a>
+                </div>
+               </article>
+        </div>
     </section>
+    </main>
     <footer>
         <hr>
         <p>&copy; 2026 pagpag kito mukbang enak murah 5 rebu aja</p>
